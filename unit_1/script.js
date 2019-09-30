@@ -42,19 +42,16 @@ div7.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/food-and-drin
 // Task 14
 let z1 = 6,
 	z2 = 3;
-
 document.querySelector('.task14').innerHTML = z1 * z2;
 
 // Task 15
 let y1 = 6,
 	y2 = 3;
-
 document.querySelector('.task15').innerHTML = y1 / y2;
 
 // Task 16
 let x1 = 'Hello',
 	x2 = 5;
-
 document.querySelector('.task16').innerHTML = x1 + x2;
 console.log(typeof (x1 + x2));
 // Вывод: В JS при сложении строки с числом число тоже превращается в строку 
@@ -65,7 +62,7 @@ console.log(d1);
 // Вывод: Нам показывает элемент в дереве документа, его номер и length элемента, т.е. массив данных (если использовать getElementsByClassName), если использовать querySelector, то только сам элемент и его содержимое
 
 // Task 18
-let d2 = document.querySelector('test-2');
+let d2 = document.querySelector('.test-2');
 console.log(d2);
 d2 = 5;
 console.log(d2);
