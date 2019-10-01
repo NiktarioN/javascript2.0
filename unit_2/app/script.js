@@ -1,80 +1,187 @@
-// Task 1
-console.log('Мое имя: Никита Трофимов');
+// Task 1. 
+let a = 7,
+	b = 9,
+	inputIn1 = document.querySelector('.task1');
+inputIn1.value = a * b;
+console.log(a * b);
 
 // Task 2
-console.log(12);
+let c = 7,
+	d = 9,
+	inputIn2 = document.querySelector('.task2');
+inputIn2.value = c / d;
 
 // Task 3
-console.log('Добро ' + ' пожаловать ' + ' на курс');
+let e = 3,
+	f = 5,
+	inputIn3 = document.querySelector('.task3');
+inputIn3.value = e + f;
 
 // Task 4
-// alert(2019);
+let e1 = '3',
+	f1 = '5',
+	inputIn4 = document.querySelector('.task4');
+inputIn4.value = e1 + f1;
+// Вывод: Т.к. складываем строки, то они просто "склеиваются"
 
 // Task 5
-// alert(2019 - 200);
+let e2 = 3,
+	f2 = 0,
+	inputIn5 = document.querySelector('.task5');
+inputIn5.value = e2 / f2;
 
 // Task 6
-document.getElementById('one').innerHTML = 'Hello World';
+let e3 = 3,
+	f3 = 'Hello',
+	inputIn6 = document.querySelector('.task6');
+inputIn6.value = e3 + f3;
 
 // Task 7
-document.getElementById('two').innerHTML = 12 * 12;
+let e4 = 3,
+	f4 = 'Hello',
+	inputIn7 = document.querySelector('.task7');
+inputIn7.value = e4 * f4;
 
 // Task 8
-document.querySelector('.one').innerHTML = 'Hello World again';
+let inputIn8 = document.querySelector('.input_task8'),
+	btnClick8 = document.querySelector('.btn_task8');
+
+btnClick8.onclick = () => {
+	console.log(inputIn8.value);
+}
 
 // Task 9
-document.querySelector('h2 span').innerHTML = 'world';
+let inputIn9 = document.querySelector('.input_task9'),
+	btnClick9 = document.querySelector('.btn_task9'),
+	divText9 = document.querySelector('.text_task9');
+
+btnClick9.onclick = () => {
+	divText9.innerHTML = inputIn9.value;
+	inputIn9.value = '';
+}
 
 // Task 10
-document.querySelector('.three').innerHTML = '<h3>Произвольный текст для Task 10</h3>'
+let inputIn10 = document.querySelector('.input_task10'),
+	btnClick10 = document.querySelector('.btn_task10'),
+	divText10 = document.querySelector('.text_task10');
 
-// Task 11 Зачем использовать + перед знаком =, если без него все работает? Даже внутри innerHTML можно разделить элементы знаком + и будет так же работать
-document.querySelector('.four').innerHTML += '<h4>Произвольный заголовок для Task 11</h4><p>Параграф с текстом для Task 11</p>';
+btnClick10.onclick = () => {
+	divText10.innerHTML = +inputIn10.value * 10;
+	inputIn10.value = '';
+}
+
+// Task 11
+let inputIn11 = document.querySelector('.input_task11'),
+	btnClick11 = document.querySelector('.btn_task11'),
+	divText11 = document.querySelector('.text_task11');
+
+btnClick11.onclick = () => {
+	divText11.innerHTML = +inputIn11.value + 11;
+	inputIn11.value = '';
+}
 
 // Task 12
-let a = document.querySelector('.five');
-a.innerHTML = 3.1415
+let inputName12 = document.querySelector('.input-name_task12'),
+	inputSurname12 = document.querySelector('.input-surname_task12'),
+	btnClick12 = document.querySelector('.btn_task12');
+
+btnClick12.onclick = () => {
+	console.log('Hello ' + inputName12.value + ' ' + inputSurname12.value);
+	inputName12.value = '';
+	inputSurname12.value = '';
+}
 
 // Task 13
-let div7 = document.querySelector('.seven');
-div7.innerHTML = '<img src="https://cdn4.iconfinder.com/data/icons/food-and-drink-flat-gradient/32/cone_ice_cream_food_drink_sweet-512.png" alt="">';
+let firstNum13 = document.querySelector('.input-num-one_task13'),
+	secondNum13 = document.querySelector('.input-num-two_task13'),
+	btnClick13 = document.querySelector('.btn_task13'),
+	divText13 = document.querySelector('.text_task13');
+
+btnClick13.onclick = () => {
+	divText13.innerHTML = +firstNum13.value + (+secondNum13.value);
+	firstNum13.value = '';
+	secondNum13.value = '';
+}
 
 // Task 14
-let z1 = 6,
-	z2 = 3;
-document.querySelector('.task14').innerHTML = z1 * z2;
+let inputIn14 = document.querySelector('.input_task14'),
+	btnClick14 = document.querySelector('.btn_task14');
+
+btnClick14.onclick = () => {
+	inputIn14.value = 'Hello';
+}
 
 // Task 15
-let y1 = 6,
-	y2 = 3;
-document.querySelector('.task15').innerHTML = y1 / y2;
+let y = document.querySelector('.input_task15'),
+	btnClick15 = document.querySelector('.btn_task15');
+
+btnClick15.onclick = () => {
+	y.style.border = '2px solid red';
+}
+// Вывод: Просто изменили через JS стили input
 
 // Task 16
-let x1 = 'Hello',
-	x2 = 5;
-document.querySelector('.task16').innerHTML = x1 + x2;
-console.log(typeof (x1 + x2));
-// Вывод: В JS при сложении строки с числом число тоже превращается в строку 
+let firstNum16 = document.querySelector('.input-num-one_task16'),
+	secondNum16 = document.querySelector('.input-num-two_task16'),
+	btnClick16 = document.querySelector('.btn_task16'),
+	divText16 = document.querySelector('.text_task16');
+
+btnClick16.onclick = () => {
+	divText16.innerHTML = +firstNum16.value + (+secondNum16.value);
+	firstNum16.value = '';
+	secondNum16.value = '';
+}
 
 // Task 17
-let d1 = document.getElementsByClassName('test-1');
-console.log(d1);
-// Вывод: Нам показывает элемент в дереве документа, его номер и length элемента, т.е. массив данных (если использовать getElementsByClassName), если использовать querySelector, то только сам элемент и его содержимое
+let InputIn17 = document.querySelector('.input_task17'),
+	btnClick17 = document.querySelector('.btn_task17');
+
+btnClick17.onclick = () => {
+	let t = InputIn17.value;
+	t = parseInt(t);
+	console.log(t);
+}
+// Функция parseInt() принимает строку и возвращает челое число в указанной системе счисления. Если же в начале строки не число, то функция вернет NaN
 
 // Task 18
-let d2 = document.querySelector('.test-2');
-console.log(d2);
-d2 = 5;
-console.log(d2);
-// Вывод: Присвоили другое значение переменной, поэтому и выводится просто значение 5
+let InputIn18 = document.querySelector('.input_task18'),
+	btnClick18 = document.querySelector('.btn_task18');
+
+btnClick18.onclick = () => {
+	t = InputIn18.value;
+	t = parseFloat(t);
+	console.log(t);
+}
+// Функция parseFloat() принимает строку и возвращает челое число в десятичной системе. Если же в начале строки не число, то функция вернет NaN
 
 // Task 19
-let divS3 = document.querySelector('.s3');
-console.log(divS3);
-divS3 = document.querySelector('.s4');
-console.log(divS3);
-// Вывод: Присвоили другое значение переменной, поэтому и выводится div.s4
+let firstNum19 = document.querySelector('.input-num-one_task19'),
+	secondNum19 = document.querySelector('.input-num-two_task19'),
+	btnClick19 = document.querySelector('.btn_task19'),
+	divSum = document.querySelector('.text-one_task19'),
+	divParseInt = document.querySelector('.text-two_task19');
+
+btnClick19.onclick = () => {
+	divSum.innerHTML = +firstNum19.value + (+secondNum19.value);
+	let sumParse = +firstNum19.value + (+secondNum19.value);
+	sumParse = parseInt(sumParse);
+	divParseInt.innerHTML = sumParse;
+	firstNum19.value = '';
+	secondNum19.value = '';
+}
 
 // Task 20
-// document.querySelector('body').innerHTML = '';
-// Вывод: Тег body является "телом" нашего документа. Присваивая ему пустую строку мы удаляем все элементы в этом главном теге
+let inputName20 = document.querySelector('.input-nume_task20'),
+	inputSurname20 = document.querySelector('.input-surnume_task20'),
+	inputAge20 = document.querySelector('.input-age_task20'),
+	inputProfession20 = document.querySelector('.input-profession_task20'),
+	btnClick20 = document.querySelector('.btn_task20'),
+	divText20 = document.querySelector('.text_task20');
+
+btnClick20.onclick = () => {
+	divText20.innerHTML = inputName20.value + ' ' + inputSurname20.value + ' ' + inputAge20.value + ' ' + inputProfession20.value;
+	inputName20.value = '';
+	inputSurname20.value = '';
+	inputAge20.value = '';
+	inputProfession20.value = '';
+}
